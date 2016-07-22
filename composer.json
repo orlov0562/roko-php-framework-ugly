@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mikecao/flight": "^1.2",
+        "j4mie/idiorm": "^1.5"
+    }
+}

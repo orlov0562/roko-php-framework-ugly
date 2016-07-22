@@ -1,0 +1,10 @@
+#page-scroller {
+    display:none;
+    position:fixed;
+    cursor:pointer;
+    top:0;
+    width:75px;
+    height:100%;
+    background-color:#5B5B5B;
+    opacity:0.15;
+}
