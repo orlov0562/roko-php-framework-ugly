@@ -21,7 +21,7 @@
             if (preg_match('~^(https?|\#)~i', $url)) {
                 $ret = $url;
             } elseif ($url) {
-                $ret = Flight::request()->base.'/'.ltrim($url,'/');
+                $ret = rtrim(Flight::request()->base,'/').'/'.ltrim($url,'/');
             } else {
                 $ret = Flight::request()->base;
             }
