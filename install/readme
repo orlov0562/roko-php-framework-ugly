@@ -1,0 +1,31 @@
+!! Keep in mind that at this point framework contains only notes and haven't
+explanations or documentation.
+
+!! Please do not install anything to your PC and try another userfriendly
+and more documented framework if you do not understand what this manual about
+
+Installation requirements
+
+- Apache 2.4+
+- PHP 7+
+- MySQL 5.4+ (optional)
+- SQLite 3+ (optional)
+
+Installation manual
+
+- install LAMP
+- install git, composer, bower
+
+- Create folder /path/roko
+- Open this folder in terminal: cd /path/roko
+- Download: git pull origin master git@github.com:orlov0562/roko-php-framework-ugly.git .
+- Install dependences: composer install
+- Change dir to /path/roko/web/media/dist
+- Install frontend dependences: bower install
+
+- Configure apache host to web directory (/path/roko/web)
+- Change RewriteBase in /path/roko/web/.htaccess according to your configuration
+
+Optional:
+- Create database
+- Import appropriate tables from /path/roko/install/sql/
