@@ -4,8 +4,8 @@
         'enabled' => true,
         'connections' => [
             \ORM::DEFAULT_CONNECTION => [
-                'autoload' => false,
-                'connection_string' => 'sqlite:'.ROOT_DIR.'/store/roko.db',
+                'autoload' => true,
+                'connection_string' => 'sqlite:'.ROOT_DIR.'/store/roko.sqlite',
             ],
             'mysql' => [
                 'autoload' => false,
@@ -15,7 +15,7 @@
             ],
             'sqlite' => [
                 'autoload' => false,
-                'connection_string' => 'sqlite:'.ROOT_DIR.'/store/roko.db',
+                'connection_string' => 'sqlite:'.ROOT_DIR.'/store/roko.sqlite',
             ],
         ],
     ];
