@@ -68,9 +68,9 @@
             if ($name) $attr['name'] = 'formData['.$name.']';
             $options = '';
             foreach($items as $itemValue=>$itemText) {
-                $attr['value'] = $value;
-                if ($itemValue==$value) {$attr['selected'] = 'selected';}
-                $options.=Html::tag('option', $itemText, $attr);
+                $optionAttr= ['value'=> $itemValue];
+                if ($itemValue==$value) {$optionAttr['selected'] = 'selected';}
+                $options.=Html::tag('option', $itemText, $optionAttr);
             }
             return Html::tag('select',$options, $attr);
         }
